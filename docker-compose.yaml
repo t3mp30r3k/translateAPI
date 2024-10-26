@@ -1,6 +1,7 @@
 version: "3.9"
 services:
   translate_api:
+    restart: unless-stopped
     container_name: TranslateAPI
 #    entrypoint: ["/bin/sh","-c"]
     build:
