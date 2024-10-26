@@ -1,6 +1,6 @@
 # Free API Translate
 
-Welcome to the Free Translate API! This API allows you to perform translations between different languages without any limits. It's a free and open-source project ported and baked by [Rusdianto@gmail.com](https://github.com/t3mp30r3k/translateAPI)
+Welcome to the Free Translate API! This API allows you to perform translations between different languages without any limits. It's a free and open-source project ported and baked by [rusdianto@gmail.com](https://github.com/t3mp30r3k/translateAPI)
 ## Table of Contents
 - [Requirement](#requirement) 
 - [Getting Started](#getting-started)
