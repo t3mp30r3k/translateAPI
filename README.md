@@ -1,10 +1,8 @@
-# Free Translate API
+# Free API Translate
 
-Welcome to the Free Translate API! This API allows you to perform translations between different languages without any limits. It's a free and open-source project ported and baked by
-[Rusdianto](https://github.com/t3mp30r3k) .
-
+Welcome to the Free Translate API! This API allows you to perform translations between different languages without any limits. It's a free and open-source project ported and baked by [Rusdianto@gmail.com](https://github.com/t3mp30r3k/translateAPI)
 ## Table of Contents
-
+- [Requirement](#requirement) 
 - [Getting Started](#getting-started)
   - [Installation](#installation)
   - [Usage](#usage)
@@ -13,31 +11,42 @@ Welcome to the Free Translate API! This API allows you to perform translations b
 - [Contributing](#contributing)
 - [License](#license)
 
+
+## Requirement
+
+To use this free Translate API, you need to install [docker](#docker-install) and [docker compose](#docker-compose-install)
+
+### Docker install
+
+please follow this docker installation https://docs.docker.com/engine/install/
+
+### Docker Compose install
+
+Please follow this docker compose installation https://docs.docker.com/compose/install/
+
+
 ## Getting Started
 
-### Installation
+### API Installation
+clone git repository and go to api directory
 
-To use the Free Translate API, you need to have [Golang](https://golang.org/dl/) installed on your system. You can then follow these steps to get started:
-
- Clone the repository:
-
-   ```bash
-   git clone https://github.com/t3mp30r3k/free-translate-api.git
-
-   cd free-translate-api
-
-   ```
-
-## usage
-Start the API server:
 ```bash
-go run main.go
+git clone https://github.com/t3mp30r3k/translateAPI.git
+cd translateAPI
 ```
-The API server will start running on http://localhost:8000.
+
+run docker compose 
+```bash
+docker-compose up -d
+```
+
+the default port is 8011, you can customise port allocation as you need in docker-compose.yaml file
+
+The API server will start running on http://localhost:8011.
 
 You can now send translation requests to the API using HTTP POST requests. The endpoint for translation is /translate. Here's an example using curl:
 ```bash
-curl -X POST -H "Content-Type: application/json" -d '{"text": "Hello", "to": "id"}' http://localhost:8000/translate
+curl -X POST -H "Content-Type: application/json" -d '{"text": "Hello", "to": "id"}' http://localhost:8011/translate
 ```
 
 ## Supported Languages
