@@ -28,10 +28,13 @@ Please follow this docker compose installation https://docs.docker.com/compose/i
 ## Getting Started
 
 ### API Installation
-clone git repository and go to api directory
+clone git repository
 
 ```bash
 git clone https://github.com/t3mp30r3k/translateAPI.git
+```
+
+```bash
 cd translateAPI
 ```
 
